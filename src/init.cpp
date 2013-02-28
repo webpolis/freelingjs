@@ -92,7 +92,7 @@ void Freeling::init(Handle<Object> target) {
     util::init_locale(L"default");
 
     // initialize module variables
-    char out* = "Freeling for NodeJS - version: 1.1 - author: Nicolas Iglesias <nico@webpolis.com.ar>";
+    char* out = "Freeling for NodeJS - version: 1.1 - author: Nicolas Iglesias <nico@webpolis.com.ar>";
     target->Set(v8::String::NewSymbol("version"), v8::String::New(out, strlen(out)));
 
     NODE_SET_METHOD(target, "process", process);
