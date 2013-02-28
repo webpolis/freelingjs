@@ -1,0 +1,1 @@
+cmd_Release/freeling.node := ln -f "Release/obj.target/freeling.node" "Release/freeling.node" 2>/dev/null || (rm -rf "Release/freeling.node" && cp -af "Release/obj.target/freeling.node" "Release/freeling.node")

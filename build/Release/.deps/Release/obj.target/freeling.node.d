@@ -1,0 +1,1 @@
+cmd_Release/obj.target/freeling.node := flock ./Release/linker.lock g++ -shared -pthread -rdynamic -m64 -L/usr/local/lib  -Wl,-soname=freeling.node -o Release/obj.target/freeling.node -Wl,--start-group Release/obj.target/freeling/src/init.o -Wl,--end-group -lfreeling
