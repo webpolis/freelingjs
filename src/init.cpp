@@ -1,5 +1,3 @@
-#include <node/v8.h>
-
 #include "init.h"
 
 char * convert(const char *from_charset, const char *to_charset, const char *input) {
